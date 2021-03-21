@@ -52,17 +52,17 @@
                             <input type="text" id="sender" name="sender" disabled="disabled" value="<?php print_r($cust_arr[$_GET["cust_id"]-1][1]) ?>" class="sender" style="cursor: not-allowed;">
                         </div><br>
                         <div class="tf-elem">
-                            <label for="receiver">Select receiver: </label>
+                            <label for="receiver">Select receiver: </label><span style="color:red">&nbsp;*</span>
                             <select name="receiver" id="receiver">
                                 <option value="dummy"><-- Select receiver --></option>
                                 <?php foreach($rec_arr as $elem){ ?>
                                     <option value="<?php echo $elem[0]?>"><?php echo $elem[1]?></option>
                                 <?php } ?>
-                            </select><span style="color:red">&nbsp;*</span>
+                            </select>
                         </div><br>
                         <div class="tf-elem">
-                            <label for="inp_amount">Enter amount: </label>
-                            <input type="number" name="inp_amount" placeholder="e.g. 4000 (in ₹)"><span style="color:red">&nbsp;*</span>
+                            <label for="inp_amount">Enter amount: </label><span style="color:red">&nbsp;*</span>
+                            <input type="number" name="inp_amount" placeholder="e.g. 4000 (in ₹)">
                         </div><br>
                         <div class="tf-elem">
                             <label for="inp_message">Enter message: </label><br>
