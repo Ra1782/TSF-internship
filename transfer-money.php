@@ -21,26 +21,26 @@
         <h1 class="transfers-heading">TRANSFER MONEY</h1>
         <form action="transfer-money-backend.php?sender=not-fixed" method="post" class="transfer-money">
             <div class="tf-elem">
-                <label for="sender">Select sender: </label>
+                <label for="sender">Select sender: </label><span style="color:red">&nbsp;*</span>
                 <select name="sender" id="sender">
                     <option value="dummy"><-- Select sender --></option>
                     <?php foreach($arr as $elem){ ?>
                         <option value="<?php echo $elem[0]?>"><?php echo $elem[1]?></option>
                     <?php } ?>
-                </select><span style="color:red">&nbsp;*</span>
+                </select>
             </div><br>
             <div class="tf-elem">
-                <label for="receiver">Select receiver: </label>
+                <label for="receiver">Select receiver: </label><span style="color:red">&nbsp;*</span>
                 <select name="receiver" id="receiver">
                     <option value="dummy"><-- Select receiver --></option>
                     <?php foreach($arr as $elem){ ?>
                         <option value="<?php echo $elem[0]?>"><?php echo $elem[1]?></option>
                     <?php } ?>
-                </select><span style="color:red">&nbsp;*</span>
+                </select>
             </div><br>
             <div class="tf-elem">
-                <label for="inp_amount">Enter amount: </label>
-                <input type="number" name="inp_amount" placeholder="e.g. 4000 (in ₹)"><span style="color:red">&nbsp;*</span>
+                <label for="inp_amount">Enter amount: </label><span style="color:red">&nbsp;*</span>
+                <input type="number" name="inp_amount" placeholder="e.g. 4000 (in ₹)">
             </div><br>
             <div class="tf-elem">
                 <label for="inp_message">Enter message: </label><br>
